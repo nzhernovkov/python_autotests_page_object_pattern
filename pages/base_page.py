@@ -16,3 +16,10 @@ class BasePage:
         except NoSuchElementException:
             return False
         return True
+
+    def is_substring_in_url_present(self, substring):
+        if substring.lower() in self.browser.current_url:
+            return True
+        return False
+
+
