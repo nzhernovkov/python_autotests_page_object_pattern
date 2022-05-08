@@ -16,3 +16,4 @@ class ProductPageLocators:
     PRODUCT_PRICE = (By.TAG_NAME, '.product_main > .price_color')
     ALERT_PRODUCT_NAME = (By.CSS_SELECTOR, '.alert-success:first-child strong')
     ALERT_PRODUCT_PRICE = (By.CSS_SELECTOR, '.alert-info strong')
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, '.alert-success')
