@@ -59,4 +59,12 @@ def test_message_disappear_after_adding_product_to_basket(browser):
     product_page.should_success_message_disappear()
 
 
+def test_guest_can_go_to_login_page_from_product_page(browser):
+    link = 'http://selenium1py.pythonanywhere.com/ru/catalogue/coders-at-work_207'
+    product_page = ProductPage(browser, link)
+    product_page.open()
+    product_page.go_to_login_page()
+    product_page.should_be_login_link()
+
+
 
