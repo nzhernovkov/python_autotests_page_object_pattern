@@ -23,8 +23,8 @@ class LoginPageLocators:
 
 class ProductPageLocators:
     BASKET_BUTTON = (By.CSS_SELECTOR, 'button.btn-add-to-basket')
-    PRODUCT_NAME = (By.TAG_NAME, '.product_main > h1')
-    PRODUCT_PRICE = (By.TAG_NAME, '.product_main > .price_color')
+    PRODUCT_NAME = (By.CSS_SELECTOR, '.product_main > h1')
+    PRODUCT_PRICE = (By.CSS_SELECTOR, '.product_main > .price_color')
     ALERT_PRODUCT_NAME = (By.CSS_SELECTOR, '.alert-success:first-child strong')
     ALERT_PRODUCT_PRICE = (By.CSS_SELECTOR, '.alert-info strong')
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, '.alert-success')
