@@ -34,7 +34,6 @@ class TestUserAddToBasketFromProductPage:
         product_page.should_be_added_product()
 
 
-@pytest.mark.need_review
 @pytest.mark.parametrize('url_param', ["?promo=offer0",
                                        "?promo=offer1",
                                        "?promo=offer2",
@@ -73,6 +72,7 @@ def test_guest_cant_see_product_in_basket_opened_from_product_page(browser):
     basket_page.should_be_empty_basket()
 
 
+@pytest.mark.need_review
 def test_guest_can_add_product_to_basket(browser):
     product_page = ProductPage(browser, product_link)
     product_page.open()
